@@ -2,13 +2,13 @@ import React from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 
-export default function Footer() {
-    const brands = [
-        { id: 1, source: require('../assets/kohler.png') },
-        { id: 2, source: require('../assets/JMV.png') },
-        { id: 3, source: require('../assets/toto.png') },
-    ]
+const brands = [
+    { id: 1, source: require('../assets/kohler.png') },
+    { id: 2, source: require('../assets/JMV.png') },
+    { id: 3, source: require('../assets/toto.png') },
+]
 
+export default function Footer() {
     return (
         <View>
             <View style={styles.footer}>

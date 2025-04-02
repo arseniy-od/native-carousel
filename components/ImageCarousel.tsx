@@ -11,26 +11,27 @@ import {
 
 const { width } = Dimensions.get('window')
 
-const ImageCarousel = () => {
+const carouselData = [
+    {
+        image: require('../assets/bathroom.png'),
+        title: 'Harvest',
+        subtitle: 'Bold design meets timeless beauty',
+    },
+    {
+        image: require('../assets/bathroom2.png'),
+        title: 'Stoneworks',
+        subtitle: 'Bold design meets timeless beauty',
+    },
+    {
+        image: require('../assets/bathroom3.png'),
+        title: 'Classic',
+        subtitle: 'Bold design meets timeless beauty',
+    },
+]
+
+export default function ImageCarousel() {
     const [activeIndex, setActiveIndex] = useState(0)
 
-    const carouselData = [
-        {
-            image: require('../assets/bathroom.png'),
-            title: 'Harvest',
-            subtitle: 'Bold design meets timeless beauty',
-        },
-        {
-            image: require('../assets/bathroom2.png'),
-            title: 'Stoneworks',
-            subtitle: 'Bold design meets timeless beauty',
-        },
-        {
-            image: require('../assets/bathroom3.png'),
-            title: 'Classic',
-            subtitle: 'Bold design meets timeless beauty',
-        },
-    ]
     return (
         <View style={styles.carouselContainer}>
             <ScrollView
@@ -156,5 +157,3 @@ const styles = StyleSheet.create({
         fontWeight: '500',
     },
 })
-
-export default ImageCarousel

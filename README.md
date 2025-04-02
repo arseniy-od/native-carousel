@@ -6,4 +6,4 @@ To start the development server, run the following command:
 
 After running the command above, you will see a QR code in your terminal. Scan this QR code to open the app on your device.
 
-If you're using an Android Emulator or iOS Simulator, you can press a or i respectively to open the app.
+If you're using an Android Emulator or iOS Simulator, you can press `a` or `i` respectively to open the app.
